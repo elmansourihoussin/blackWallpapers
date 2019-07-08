@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.islamiat.blackwallpapers.activity.MainActivity"
+    >
+    <item
+        android:id="@+id/action_clear_history"
+        android:title="@string/action_clear_history"
+        android:icon="@drawable/ic_menu_history"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_menu_share"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/action_more_app"
+        android:title="@string/action_more_app"
+        android:icon="@drawable/ic_menu_more_app"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        android:icon="@drawable/ic_menu_about"
+        app:showAsAction="withText"
+        android:visible="false"/>
+
+
+</menu>

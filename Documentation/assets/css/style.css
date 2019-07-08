@@ -1,0 +1,42 @@
+
+body{
+    font-size: 120%;
+}
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.area {
+    margin-top: 50px;
+}
+.header {
+    margin-bottom: 100px;
+    text-align:center!important;
+}
+.title {
+    font-family: Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    /*margin-bottom: 5px;*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: #e2e3e5 solid 2px;
+    border-radius: 15px;
+    margin: 15px 0 30px;
+    padding: 5px;
+}
+
+.screen-layout {
+    margin-bottom: 50px;
+}
+
+li{
+    margin-bottom: 20px;
+}
+.note{
+    color: #FF0000;
+}

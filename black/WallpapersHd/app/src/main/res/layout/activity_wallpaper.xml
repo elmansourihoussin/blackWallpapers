@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WallpaperActivity"
+    android:background="#181818">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.theartofdev.edmodo.cropper.CropImageView
+                android:id="@+id/cropImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/ac_wallpaper_option_layout_padding">
+
+            <com.ornach.nobobutton.ViewButton
+                android:id="@+id/btn_scrollable"
+                android:layout_width="@dimen/ac_wallpaper_option_viewbutton_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onClickRationButton"
+                android:orientation="vertical"
+                android:padding="@dimen/ac_wallpaper_option_viewbutton_padding"
+                android:tag="1">
+
+                <com.ornach.magicicon.IconView
+                    android:id="@+id/icon_scrollable"
+                    android:layout_width="@dimen/ac_wallpaper_option_icon_size"
+                    android:layout_height="@dimen/ac_wallpaper_option_icon_size"
+                    android:src="@drawable/ic_crop_ratio_01"
+                    app:mi_iconColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_scrollable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scrollable"
+                    android:textColor="@android:color/white" />
+            </com.ornach.nobobutton.ViewButton>
+
+            <View
+                android:layout_width="@dimen/ac_wallpaper_option_view_space"
+                android:layout_height="1dp"/>
+
+            <com.ornach.nobobutton.ViewButton
+                android:id="@+id/btn_fixed"
+                android:layout_width="@dimen/ac_wallpaper_option_viewbutton_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onClickRationButton"
+                android:orientation="vertical"
+                android:padding="@dimen/ac_wallpaper_option_viewbutton_padding"
+                android:tag="1">
+
+                <com.ornach.magicicon.IconView
+                    android:id="@+id/icon_fixed"
+                    android:layout_width="@dimen/ac_wallpaper_option_icon_size"
+                    android:layout_height="@dimen/ac_wallpaper_option_icon_size"
+                    android:src="@drawable/ic_crop_ratio_02"
+                    app:mi_iconColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/tv_fixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fixed"
+                    android:textColor="@android:color/white" />
+            </com.ornach.nobobutton.ViewButton>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#BBB"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="@dimen/ac_wallpaper_button_padding"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_focusColor="#B1B1B1"
+                app:nb_text="Cancel"
+                app:nb_textColor="#FFF"/>
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btn_wallpaper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:padding="@dimen/ac_wallpaper_button_padding"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_focusColor="#B1B1B1"
+                app:nb_text="Set Wallpaper"
+                app:nb_textColor="#FFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

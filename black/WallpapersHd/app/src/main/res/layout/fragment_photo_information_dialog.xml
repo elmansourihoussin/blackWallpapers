@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.PhotoInformationDialogFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#EEE"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ornach.magicicon.IconButton
+                android:id="@+id/btn_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:padding="@dimen/photo_info_back_icon_padding"
+                app:mi_fontText="&#xf053;"
+                app:mi_typeface="font_awesome" />
+
+            <View
+                android:layout_width="@dimen/photo_info_back_icon_right_space"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Image Title 01"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/photo_info_content_margin">
+
+                    <com.ornach.magicicon.IconView
+                        android:layout_width="@dimen/photo_info_icon_size"
+                        android:layout_height="@dimen/photo_info_icon_size"
+                        android:padding="0dp"
+                        app:mi_fontText="&#xf073;"
+                        app:mi_typeface="font_awesome" />
+
+                    <View
+                        android:layout_width="@dimen/photo_info_icon_space_right"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/photo_info_content_margin">
+
+                    <com.ornach.magicicon.IconView
+                        android:layout_width="@dimen/photo_info_icon_size"
+                        android:layout_height="@dimen/photo_info_icon_size"
+                        android:padding="0dp"
+                        app:mi_fontText="&#xf1c5;"
+                        app:mi_typeface="font_awesome" />
+
+                    <View
+                        android:layout_width="@dimen/photo_info_icon_space_right"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_view_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/photo_info_content_margin">
+
+                    <com.ornach.magicicon.IconView
+                        android:layout_width="@dimen/photo_info_icon_size"
+                        android:layout_height="@dimen/photo_info_icon_size"
+                        android:padding="0dp"
+                        app:mi_fontText="&#xf06e;"
+                        app:mi_typeface="font_awesome" />
+
+                    <View
+                        android:layout_width="@dimen/photo_info_icon_space_right"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/photo_info_content_margin">
+
+                    <com.ornach.magicicon.IconView
+                        android:layout_width="@dimen/photo_info_icon_size"
+                        android:layout_height="@dimen/photo_info_icon_size"
+                        android:padding="0dp"
+                        app:mi_fontText="&#xf1f9;"
+                        app:mi_typeface="font_awesome" />
+
+                    <View
+                        android:layout_width="@dimen/photo_info_icon_space_right"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_copyright"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/photo_info_content_margin">
+
+                    <com.ornach.magicicon.IconView
+                        android:layout_width="@dimen/photo_info_icon_size"
+                        android:layout_height="@dimen/photo_info_icon_size"
+                        android:padding="0dp"
+                        app:mi_fontText="&#xf0c1;"
+                        app:mi_typeface="font_awesome" />
+
+                    <View
+                        android:layout_width="@dimen/photo_info_icon_space_right"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_url"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#344DDC" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/photo_info_content_margin">
+
+                    <com.ornach.magicicon.IconView
+                        android:layout_width="@dimen/photo_info_icon_size"
+                        android:layout_height="@dimen/photo_info_icon_size"
+                        android:padding="0dp"
+                        app:mi_fontText="&#xf15c;"
+                        app:mi_typeface="font_awesome" />
+
+                    <View
+                        android:layout_width="@dimen/photo_info_icon_space_right"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/layout_loader"/>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/layout_bottom"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/app_short_description"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="30dp"
+            android:background="@android:color/darker_gray"/>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_os_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            app:nb_backgroundColor="@android:color/transparent"
+            app:nb_borderColor="@android:color/transparent"
+            app:nb_borderWidth="0dp"
+            app:nb_focusColor="#DDD"
+            app:nb_text="Open Source Attribution"
+            app:nb_radius="20dp"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_more_app"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:nb_backgroundColor="#00000000"
+            app:nb_focusColor="#BBB"
+            app:nb_text="More App"
+            app:nb_textColor="@android:color/primary_text_light"
+            android:onClick="onClick"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"/>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_privacy_policy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:nb_backgroundColor="#00000000"
+            app:nb_focusColor="#BBB"
+            app:nb_text="Privacy Policy"
+            app:nb_textColor="@android:color/primary_text_light"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</RelativeLayout>

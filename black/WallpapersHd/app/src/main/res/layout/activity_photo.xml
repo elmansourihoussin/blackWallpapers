@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.PhotoActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_tools"
+        >
+
+        <com.ornach.magicicon.IconButton
+            android:id="@+id/btn_info"
+            android:layout_width="@dimen/ac_photo_info_icon_size"
+            android:layout_height="@dimen/ac_photo_info_icon_size"
+            app:mi_fontText="&#xf05a;"
+            app:mi_typeface="font_awesome"
+            app:mi_iconColor="@android:color/white"
+            android:padding="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/ac_photo_info_icon_margin"
+            app:mi_borderColor="#999"
+            app:mi_borderWidth="2dp"
+            app:mi_shape="oval"
+            android:onClick="onClick"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#99000000"
+            android:gravity="center">
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btn_download"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:nb_text="Download"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_textColor="#00EAFF"
+                app:nb_textSize="@dimen/ac_photo_bottom_icon_text_size"
+                android:paddingTop="@dimen/ac_photo_bottom_icon_padding"
+                android:paddingBottom="@dimen/ac_photo_bottom_icon_padding"
+                android:onClick="onClick"/>
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btn_wallpaper"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:nb_text="Set Wallpaper"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_textColor="#32F244"
+                app:nb_textSize="@dimen/ac_photo_bottom_icon_text_size"
+                android:paddingTop="@dimen/ac_photo_bottom_icon_padding"
+                android:paddingBottom="@dimen/ac_photo_bottom_icon_padding"
+                android:onClick="onClick"/>
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btn_share"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:nb_text="Share"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_textColor="#FF3464"
+                app:nb_textSize="@dimen/ac_photo_bottom_icon_text_size"
+                android:paddingTop="@dimen/ac_photo_bottom_icon_padding"
+                android:paddingBottom="@dimen/ac_photo_bottom_icon_padding"
+                android:onClick="onClick"/>
+
+            <com.ornach.magicicon.IconButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="@dimen/ac_photo_bottom_favorite_icon_width"
+                android:layout_height="match_parent"
+                app:mi_fontText="&#xf004;"
+                app:mi_typeface="font_awesome"
+                app:mi_iconColor="#DDD"
+                android:padding="@dimen/ac_photo_bottom_favorite_icon_padding"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+<include layout="@layout/layout_loader"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_error"
+        android:background="#f1f1f1"
+        android:visibility="gone"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No internet connection"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</RelativeLayout>

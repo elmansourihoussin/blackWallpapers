@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- main activity -->
+    <dimen name="search_height">45dp</dimen>
+    <dimen name="search_edittext_padding">10dp</dimen>
+    <dimen name="search_icon_size">@dimen/search_height</dimen>
+
+    <!--Activity photo-->
+    <dimen name="ac_photo_info_icon_size">40dp</dimen>
+    <dimen name="ac_photo_info_icon_margin">30dp</dimen>
+    <dimen name="ac_photo_bottom_icon_text_size">14sp</dimen>
+    <dimen name="ac_photo_bottom_icon_padding">20dp</dimen>
+    <dimen name="ac_photo_bottom_favorite_icon_width">70dp</dimen>
+    <dimen name="ac_photo_bottom_favorite_icon_padding">20dp</dimen>
+
+    <!--photo info dialog-->
+    <dimen name="photo_info_icon_size">20dp</dimen>
+    <dimen name="photo_info_content_margin">15dp</dimen>
+    <dimen name="photo_info_icon_space_right">20dp</dimen>
+    <dimen name="photo_info_back_icon_padding">15dp</dimen>
+    <dimen name="photo_info_back_icon_right_space">10dp</dimen>
+
+    <!--activity wallpaper-->
+    <dimen name="ac_wallpaper_option_layout_padding">10dp</dimen>
+    <dimen name="ac_wallpaper_option_viewbutton_width">100dp</dimen>
+    <dimen name="ac_wallpaper_option_viewbutton_padding">10dp</dimen>
+    <dimen name="ac_wallpaper_option_icon_size">50dp</dimen>
+    <dimen name="ac_wallpaper_option_view_space">20dp</dimen>
+    <dimen name="ac_wallpaper_button_padding">15dp</dimen>
+
+    <!--Extra-->
+    <dimen name="loading_indicator_size">120dp</dimen>
+    <dimen name="category_thumbnail_padding">15dp</dimen>
+
+</resources>

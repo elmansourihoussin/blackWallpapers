@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="grid_column_number">2</integer>
+    <integer name="tag_grid_column_number">1</integer>
+
+    <!--DetailFragment-->
+    <integer name="related_image_divider">3</integer> <!--3 photo in a row-->
+
+
+    <!--Admob ad width & height-->
+    <integer name="native_ad_small_width">300</integer>
+    <integer name="native_ad_small_height">90</integer>
+    <integer name="native_ad_large_width">300</integer>
+    <integer name="native_ad_large_height">300</integer>
+
+
+    <integer name="native_ad_interval_item">11</integer>
+</resources>

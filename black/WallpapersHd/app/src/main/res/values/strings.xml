@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Black Wallpapers HD 4K - Dark Backgrounds </string>
+    <string name="app_short_description">"Black Wallpapers HD 4K- Dark Backgrounds, Fonds d'écran Animé HD fond d'écran 4K  "</string>
+
+    <string name="tab_text_1">Tags</string>
+    <string name="tab_text_2">Recent</string>
+    <string name="tab_text_3">Favorite</string>
+    <string name="tab_text_4">History</string>
+
+    <string name="action_clear_history">Clear History</string>
+    <string name="action_share">Share</string>
+    <string name="action_more_app">More Apps</string>
+    <string name="action_about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
